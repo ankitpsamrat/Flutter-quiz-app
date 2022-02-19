@@ -8,19 +8,15 @@ void main() {
   runApp(MyApp());
 }
 
-// void main() => runApp(MyApp());
-
 class MyApp extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() {
-    return _MyAppState();
-  }
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   final _questions = const [
     {
-      'questionText': 'What\'s your favorite color?',
+      'questionText': 'What\'s your favorite color ?',
       'answers': [
         {'text': 'Black', 'score': 10},
         {'text': 'Red', 'score': 5},
@@ -29,7 +25,7 @@ class _MyAppState extends State<MyApp> {
       ],
     },
     {
-      'questionText': 'What\'s your favorite animal?',
+      'questionText': 'What\'s your favorite animal ?',
       'answers': [
         {'text': 'Rabbit', 'score': 3},
         {'text': 'Snake', 'score': 11},
@@ -38,7 +34,7 @@ class _MyAppState extends State<MyApp> {
       ],
     },
     {
-      'questionText': 'Who\'s your favorite food?',
+      'questionText': 'What\'s your favorite food ?',
       'answers': [
         {'text': 'Pizza', 'score': 1},
         {'text': 'Berger', 'score': 1},
@@ -77,7 +73,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My First App'),
+          title: Text('Quiz App'),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(

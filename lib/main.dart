@@ -73,7 +73,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Quiz App'),
+          centerTitle: true, // center me karne ke liye
+          title: Text(
+            'Funny Quiz App',
+          ),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(

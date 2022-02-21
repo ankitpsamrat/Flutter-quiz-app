@@ -1,4 +1,4 @@
-// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables, prefer_const_constructors, deprecated_member_use
+// ignore_for_file: use_key_in_widget_constructors, prefer_const_constructors_in_immutables, prefer_const_constructors, deprecated_member_use, prefer_const_literals_to_create_immutables, dead_code
 
 import 'package:flutter/material.dart';
 
@@ -35,8 +35,10 @@ class Result extends StatelessWidget {
           FlatButton(
             child: Text(
               'Restart Quiz!',
+              style: TextStyle(fontSize: 16),
             ),
-            textColor: Colors.green,
+            textColor: Colors.white, // text color
+            color: Color(0xff0cbab8), // background color
             onPressed: resetHandler,
           ),
         ],

@@ -1,14 +1,16 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, deprecated_member_use, avoid_print, must_be_immutable, use_key_in_widget_constructors, unused_local_variable, no_logic_in_create_state
+// ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import './quiz.dart';
-import './result.dart';
+import 'pages/quiz_page.dart';
+import 'pages/result_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   State<MyApp> createState() => _MyAppState();
 }
@@ -73,8 +75,9 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          centerTitle: true, // center me karne ke liye
-          title: Text(
+          elevation: 0,
+          centerTitle: true,
+          title: const Text(
             'Funny Quiz App',
           ),
         ),

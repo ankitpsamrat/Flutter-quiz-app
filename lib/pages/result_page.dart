@@ -50,20 +50,22 @@ class Result extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-            const SizedBox(
-              height: 25,
-            ),
-            FlatButton(
-              child: const Text(
-                'Restart Quiz!',
-                style: TextStyle(
-                  fontSize: 16,
-                ),
-              ),
-              textColor: Colors.white,
-              color: const Color(0xff0cbab8),
+            const SizedBox(height: 25),
+            ElevatedButton(
               onPressed: resetHandler,
+              child: const Text('Restart Quiz!'),
             ),
+            // FlatButton(
+            //   child: const Text(
+            //     'Restart Quiz!',
+            //     style: TextStyle(
+            //       fontSize: 16,
+            //     ),
+            //   ),
+            //   textColor: Colors.white,
+            //   color: const Color(0xff0cbab8),
+            //   onPressed: resetHandler,
+            // ),
           ],
         ),
       ),

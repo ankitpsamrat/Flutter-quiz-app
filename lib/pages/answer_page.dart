@@ -40,20 +40,25 @@ class Answer extends StatelessWidget {
             ],
           ),
         ),
-        child: FlatButton(
-          child: Text(
-            answerText,
-            style: const TextStyle(
-              fontSize: 15,
-            ),
-          ),
-          textColor: Colors.white,
-          color: Colors.transparent,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(30.0),
-          ),
+
+        child: ElevatedButton(
           onPressed: selectHandler,
+          child: Text(answerText),
         ),
+        // child: FlatButton(
+        //   child: Text(
+        //     answerText,
+        //     style: const TextStyle(
+        //       fontSize: 15,
+        //     ),
+        //   ),
+        //   textColor: Colors.white,
+        //   color: Colors.transparent,
+        //   shape: RoundedRectangleBorder(
+        //     borderRadius: BorderRadius.circular(30.0),
+        //   ),
+        //   onPressed: selectHandler,
+        // ),
       ),
     );
   }

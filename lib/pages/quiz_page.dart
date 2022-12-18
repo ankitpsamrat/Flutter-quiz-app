@@ -1,8 +1,8 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
-import 'answer_page.dart';
-import 'question_page.dart';
+import '/pages/answer_page.dart';
+import '/pages/question_page.dart';
 
 // class Quiz extends StatelessWidget {
 //   const Quiz({
